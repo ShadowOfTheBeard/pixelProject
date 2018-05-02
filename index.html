@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Project</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Orbitron">
+  <link href="pixelProject.css" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="main">
+<div class="header"><h1>PIXEL ART MAKER</h1></div>
+
+<form class="gridDetails">
+  <p>Grid Height:</p>
+  <input type="range" min="1" max="50" class="inputField" value="20"  id ="input1"></input>
+  
+  <p>Grid Width:</p>
+  <input type="range" min="1" max="50" class="inputField" value="20" id ="input2"></input>
+
+  <button class ="button" id = "submit" name="Submit">Create Grid</button>
+</form>
+
+<br>
+<div class="counters"><input type="text" id="valueHeight" class="counter"value="20"/>
+                      <input type="text" id="valueWidth" class="counter" value="20"/></div>
+<br>
+<div class="colourPick" >
+    <p class="colorPickText">Pick A Colour:</p>
+    <input type="color" id="colorPicker"></input>
+</div>
+<p>Design Canvas</p>
+<div class= "grid"></div>
+<button class ="button" id="clear">Clear Grid</button>
+</div>
+<script type="text/javascript" src="pixelProjectjs.js"></script>
+</body>
+</html>
