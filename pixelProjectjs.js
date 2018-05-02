@@ -52,9 +52,10 @@ function checkSize(){
 /*
 *@description sets the counter value to that of the slider
 */
-$('#input1').on('input', function(e){
+$('#input1').on('oninput', function(e){
 
-  $("#valueHeight").value() = $("#input1").value();
+  var val = $("#input1").value();
+  $("#valueHeight").value() = val;
   });
 
 /*
